@@ -1,6 +1,6 @@
 # ghost-export-to-markdown
 
-A simple CLI to export Ghost posts to Markdown.
+A simple CLI to export Ghost posts to Markdown using the Ghost Content API.
 
 ## Installation
 
@@ -16,3 +16,5 @@ Build from source:
 git clone https://github.com/chris-tse/ghost-export-to-markdown
 go build -o bin/cli ./cli/main.go
 ```
+
+## Development
