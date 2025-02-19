@@ -1,14 +1,21 @@
 {
   "name": "ghost-export-to-markdown",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A simple Go CLI to export Ghost posts to Markdown",
   "bin": {
     "ghost-export-to-markdown": "./bin/cli"
   },
+  "files": [
+    "bin/cli-macos",
+    "bin/cli-linux",
+    "bin/cli-windows.exe",
+    "scripts/install.js"
+  ],
   "scripts": {
-    "build": "go build -o bin/cli ./cli/main.go",
-    "clean": "rm -rf bin",
-    "postinstall": "go build -o bin/cli"
+    "prerelease": "pnpm clean && ./scripts/prerelease.sh",
+    "build": "pnpm clean && go build -o bin/cli ./cli/main.go",
+    "clean": "rm -rf bin && rm -rf ghost-export",
+    "postinstall": "node scripts/install.js"
   },
   "keywords": [
     "ghost",
@@ -18,8 +25,5 @@
     "cli"
   ],
   "author": "Chris Tse",
-  "license": "MIT",
-  "dependencies": {
-    "ghost-export-to-markdown": "link:"
-  }
+  "license": "MIT"
 }
