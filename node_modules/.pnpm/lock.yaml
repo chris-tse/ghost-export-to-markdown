@@ -1,13 +1,10 @@
-lockfileVersion: '9.0'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-importers:
-
-  .:
-    dependencies:
-      ghost-export-to-markdown:
-        specifier: 'link:'
-        version: 'link:'
+dependencies:
+  ghost-export-to-markdown:
+    specifier: 'link:'
+    version: 'link:'
