@@ -1,0 +1,25 @@
+version: 2
+project_name: ghost-export-to-markdown
+
+builds:
+  - id: ghost-export-to-markdown
+    main: ./cli/main.go
+    binary: cli
+    targets:
+      - darwin_amd64
+      - linux_amd64
+      - windows_amd64
+    dir: .
+
+archives:
+  - formats: binary
+    name_template: "{{ .Binary }}-{{ .Os }}"
+
+release:
+  draft: true
+  github:
+    owner: chris-tse
+    name: ghost-export-to-markdown
+
+snapshot:
+  version_template: "{{ .Version }}-SNAPSHOT-{{.ShortCommit}}"

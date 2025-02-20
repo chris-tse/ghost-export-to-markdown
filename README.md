@@ -18,3 +18,11 @@ go build -o bin/cli ./cli/main.go
 ```
 
 ## Development
+
+Requirements:
+
+- Go 1.24
+
+```bash
+go run ./cli/main.go
+```
