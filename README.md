@@ -7,7 +7,9 @@ A simple CLI to export Ghost posts to Markdown using the Ghost Content API.
 Run from NPM:
 
 ```bash
-npx ghost-export-to-markdown
+# Can alternatively use GHOST_URL and GHOST_API_KEY env vars
+# Default export location is `ghost-export`
+npx ghost-export-to-markdown --url=your.ghost.url --api-key=Your1Ghost2Api3Key --dir=path/to/export/dir
 ```
 
 Build from source:

@@ -1,6 +1,6 @@
 {
   "name": "ghost-export-to-markdown",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple Go CLI to export Ghost posts to Markdown",
   "bin": {
     "ghost-export-to-markdown": "./bin/cli"
@@ -17,6 +17,10 @@
     "clean": "rm -rf bin && rm -rf ghost-export",
     "postinstall": "node scripts/install.js"
   },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chris-tse/ghost-export-to-markdown"
+	},
   "keywords": [
     "ghost",
     "markdown",
